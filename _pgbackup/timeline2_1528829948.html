@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/plugins/jqueryui/jquery-ui.css">
+        <!-- morris CSS -->
+        <link href="assets/plugins/morrisjs/morris.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- You can change the theme colors from here -->
+        <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="https://unpkg.com/vue"></script>
+        <link href="http://visjs.org/dist/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="fix-header card-no-border mini-sidebar">
+        <div id="main-wrapper">
+            <!-- ============================================================== -->
+            <!-- Topbar header - style you can find in pages.scss -->
+            <!-- ============================================================== -->
+            <header class="topbar" data-pgc-define="tophead" data-pgc-define-name="tophead" data-pgc-define-photo-preview-only>
+                <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-collapse">
+                        <!-- ============================================================== -->
+                        <!-- toggle and nav items -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav mr-auto mt-md-0">
+                            <!-- This is  -->
+                            <li class="nav-item">
+                                <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a>
+                            </li>
+                            <li class="nav-item m-l-10">
+                                <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="index.html"><i class="ti-menu"></i></a>
+                            </li>
+                        </ul>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav my-lg-0">
+                            <!-- ============================================================== -->
+                            <!-- Search -->
+                            <!-- ============================================================== -->
+                            <li class="nav-item hidden-sm-down search-box">
+                                <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                                <form class="app-search">
+                                    <input type="text" class="form-control" placeholder="Search & enter">
+                                    <a class="srh-btn"><i class="ti-close"></i></a>
+                                </form>
+                            </li>
+                            <!-- ============================================================== -->
+                            <!-- Comment -->
+                            <!-- ============================================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa-bell fa"></i>
+                                    <div class="notify">
+                                        <span class="heartbit"></span>
+                                        <span class="point"></span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu mailbox animated slideInUp">
+                                    <ul>
+                                        <li>
+                                            <div class="drop-title">Notifications</div>
+                                        </li>
+                                        <li>
+                                            <div class="message-center">
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="btn btn-danger btn-circle">
+                                                        <i class="fa fa-link"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Luanch Admin</h5>
+                                                        <span class="mail-desc">Just see the my new admin!</span>
+                                                        <span class="time">9:30 AM</span>
+                                                    </div>
+                                                </a>
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="btn btn-success btn-circle">
+                                                        <i class="ti-calendar"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Event today</h5>
+                                                        <span class="mail-desc">Just a reminder that you have event</span>
+                                                        <span class="time">9:10 AM</span>
+                                                    </div>
+                                                </a>
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="btn btn-info btn-circle">
+                                                        <i class="ti-settings"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Settings</h5>
+                                                        <span class="mail-desc">You can customize this template as you want</span>
+                                                        <span class="time">9:08 AM</span>
+                                                    </div>
+                                                </a>
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="btn btn-primary btn-circle">
+                                                        <i class="ti-user"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Pavan kumar</h5>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                        <span class="time">9:02 AM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- ============================================================== -->
+                            <!-- End Comment -->
+                            <!-- ============================================================== -->
+                            <!-- ============================================================== -->
+                            <!-- Messages -->
+                            <!-- ============================================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa-question-circle fa"></i>
+                                    <div class="notify">
+                                        <span class="heartbit"></span>
+                                        <span class="point"></span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu mailbox animated slideInUp" aria-labelledby="2">
+                                    <ul>
+                                        <li>
+                                            <div class="drop-title">You have 4 new messages</div>
+                                        </li>
+                                        <li>
+                                            <div class="message-center">
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/1.jpg" alt="user" class="img-circle">
+                                                        <span class="profile-status online pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Pavan kumar</h5>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                        <span class="time">9:30 AM</span>
+                                                    </div>
+                                                </a>
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/2.jpg" alt="user" class="img-circle">
+                                                        <span class="profile-status busy pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Sonu Nigam</h5>
+                                                        <span class="mail-desc">I've sung a song! See you at</span>
+                                                        <span class="time">9:10 AM</span>
+                                                    </div>
+                                                </a>
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/3.jpg" alt="user" class="img-circle">
+                                                        <span class="profile-status away pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Arijit Sinh</h5>
+                                                        <span class="mail-desc">I am a singer!</span>
+                                                        <span class="time">9:08 AM</span>
+                                                    </div>
+                                                </a>
+                                                <!-- Message -->
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/4.jpg" alt="user" class="img-circle">
+                                                        <span class="profile-status offline pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h5>Pavan kumar</h5>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                        <span class="time">9:02 AM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- ============================================================== -->
+                            <!-- End Messages -->
+                            <!-- ============================================================== -->
+                            <!-- ============================================================== -->
+                            <!-- Messages -->
+                            <!-- ============================================================== -->
+                            <!-- ============================================================== -->
+                            <!-- End Messages -->
+                            <!-- ============================================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/images/users/1.jpg" alt="user" class="profile-pic" />
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right scale-up">
+                                    <ul class="dropdown-user">
+                                        <li>
+                                            <div class="dw-user-box">
+                                                <div class="u-img">
+                                                    <img src="assets/images/users/1.jpg" alt="user">
+                                                </div>
+                                                <div class="u-text">
+                                                    <h4>Steave Jobs</h4>
+                                                    <p class="text-muted">varun@gmail.com</p>
+                                                    <a href="pages-profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <a href="#"><i class="ti-user"></i> My Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="ti-wallet"></i> My Balance</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="ti-email"></i> Inbox</a>
+                                        </li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <a href="#"><i class="ti-settings"></i> Account Setting</a>
+                                        </li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- ============================================================== -->
+            <!-- End Topbar header -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Left Sidebar - style you an find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Page wrapper  -->
+            <!-- ============================================================== -->
+            <div class="page-wrapper bg-white" id="app" style="margin-left:0;">
+                <div class="row page-titles">
+                    <div class=" col-md-6 d-flex flex-row align-items-center justify-content-start"> 
+                        <div class="menu-item"> 
+                            <a href="item"><i class="fa-align-justify fa"></i>Items</a> 
+                        </div>                         
+
+                        <div class="menu-item">
+                            <i class="fa-flag fa"></i> Milestones
+                        </div>                         
+
+                        <div class="menu-item">
+                            <a href="timeline2.html"> <i class="fa fa-sliders"></i> Timeline </a> 
+                        </div>                         
+                    </div>
+                    <div class="col-md-6 d-flex flex-row justify-content-end align-content-center align-items-center">
+                        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#modal1">
+                            <i class="fa fa-plus"></i> Item
+                        </button>
+                        <button type="button" class="btn btn-info ml2" data-toggle="modal" data-target="#modal1">
+                            <i class="fa fa-plus"></i> Field
+                        </button>
+                        <div class="menu-item">
+                            <i class="fa fa-clipboard"></i>
+                            Dupicate
+                        </div>
+                        <div class="menu-item">
+                            <i class="fa fa-trash-o"></i>
+                            Delete
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="float-none text-right mb-2">
+                        <button id="zoomOut" type="button" class="btn btn-success">
+                            <i class="fa fa-search-plus"></i>zoomOut
+                        </button>
+                        <button id="zoomIn" class="btn btn-success">
+                            <i class="fa fa-search-minus"></i>zoomIn
+                        </button>
+                    </div>                     
+                    <div class="d-flex bd-highlight">
+                        <div class="flex-shrink-1 " style="width: 300px"></div>
+                        <div class="w-100 "> 
+                            <div id="visualization2"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 flex-shrink-1 bd-highlight" style="width: 300px">Flex item</div>
+                        <div class="p-2 w-100 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex bd-highlight flex-row align-self-stretch justify-content-start">
+                        <div class="bd-highlight flex-shrink-1" style="width: 50px;">
+                            <div class="header1" style="width: 50px;
+                                            color: white;
+                                            background-color: rgb(250, 190, 24);position: relative; min-height: 100%;">
+                                <div style="position: relative;top: 0px;bottom: 10px;">
+                                    <img src="https://app.roadmunk.com/assets/img/1x1-transparent-pixel.png" style="height: 100%;">
+                                    <div style="position: absolute;
+                                                        top: 100px;
+                                                        left: 0;
+                                                       
+                                                        display: flex;
+                                                        align-items: center;">
+                                        <label style="font-size: 14px;
+                                                        line-height: 16px;text-align: center;
+                                                        transform: rotate(-90deg);    max-height: 100%;
+                                                        width: 100%;
+                                                        cursor: inherit;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 1px;font-weight: 600">Header</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" w-100 bd-highlight d-flex flex-column">
+                            <div class="p2 bd-highlight d-flex bd-highlight flex-row align-self-stretch justify-content-start">
+                                <div class="header1" style="width: 50px;
+                                                    color: white;
+                                                    background-color: rgb(51, 37, 81);position: relative; min-height: 100%;">
+                                    <div style="position: relative;top: 10px;bottom: 10px;">
+                                        <img src="https://app.roadmunk.com/assets/img/1x1-transparent-pixel.png" style="height: 100%;">
+                                        <div style="position: absolute;
+                                                                top: 40px;
+                                                                left: -20px;
+                                                           
+                                                                display: flex;
+                                                                align-items: center;">
+                                            <label style="font-size: 14px;
+                                                                line-height: 16px;text-align: center;
+                                                                transform: rotate(-90deg);    max-height: 100%;
+                                                                width: 100%;
+                                                                cursor: inherit;
+                                                                overflow: hidden;
+                                                                text-overflow: ellipsis;
+                                                                text-transform: uppercase;
+                                                                letter-spacing: 1px;font-weight: 600">subheader</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" d-flex flex-column w-100">
+                                    <div class="bcon d-flex flex-row">
+                                        <div class="" style="width:165px;border-right: 1px solid #000;">Task1</div>
+                                        <div class="" style="width:100%;">
+                                            <div style="border: 1px solid rgb(35, 166, 136);
+    width: 334.3px;
+    left: 158.29048px;
+    display: block;
+    height: 100%;
+    background: rgba(35,166,136,.75);" id="" class="ui-widget-content">
+                                                <label style="height: 40px;" class="w-100 p2"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bcon d-flex flex-row">
+                                        <div class="" style="width:165px;border-right: 1px solid #000;">Task2</div>
+                                        <div class="" style="width:100%;"> 
+                                            <div style="border: 1px solid rgb(35, 166, 136);
+    width: 334.3px;
+    left: 269.29048px;
+    display: block;
+    height: 100%;
+    background: rgba(35,166,136,.75);" id="" class="ui-widget-content">
+                                                <label style="height: 40px;" class="w-100 p2"></label>
+                                            </div>
+                                        </div>
+                                    </div>                                     
+                                    <div class="bcon d-flex flex-row">
+                                        <div class="" style="width:165px;border-right: 1px solid #000;">Task2</div>
+                                        <div class="" style="width:100%;"> 
+                                            <div style="border: 1px solid rgb(35, 166, 136); width: 334.3px; left: 105.29048px; display: block;height: 100%;background: rgba(35,166,136,.75)" id="" class="ui-widget-content">
+                                                <label style="height: 40px;" class="w-100 p2"></label>
+                                            </div>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                            <div class="p2 bd-highlight d-flex bd-highlight flex-row align-self-stretch justify-content-start">
+                                <div class="header1" style="width: 50px;
+                                                    color: white;
+                                                    background-color: rgb(51, 37, 81);position: relative; min-height: 100%;">
+                                    <div style="position: relative;top: 10px;bottom: 10px;">
+                                        <img src="https://app.roadmunk.com/assets/img/1x1-transparent-pixel.png" style="height: 100%;">
+                                        <div style="position: absolute;
+                                                                top: 40px;
+                                                                left: -20px;
+                                                           
+                                                                display: flex;
+                                                                align-items: center;">
+                                            <label style="font-size: 14px;
+                                                                line-height: 16px;text-align: center;
+                                                                transform: rotate(-90deg);    max-height: 100%;
+                                                                width: 100%;
+                                                                cursor: inherit;
+                                                                overflow: hidden;
+                                                                text-overflow: ellipsis;
+                                                                text-transform: uppercase;
+                                                                letter-spacing: 1px;font-weight: 600">subheader</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" d-flex flex-column w-100">
+                                    <div class="bcon d-flex flex-row">
+                                        <div class="" style="width:165px;border-right: 1px solid #000;">Task1</div>
+                                        <div class="" style="width:100%;">
+                                            <div style="border: 1px solid rgb(35, 166, 136); width: 334.3px; left: 5.29048px; display: block;height: 100%;background: rgba(35,166,136,.75)" id="" class="ui-widget-content">
+                                                <label style="height: 40px;" class="w-100 p2"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bcon d-flex flex-row">
+                                        <div class="" style="width:165px;border-right: 1px solid #000;">Task2</div>
+                                        <div class="" style="width:100%;"> 
+                                            <div style="border: 1px solid rgb(35, 166, 136);
+    width: 334.3px;
+    left: 354.29048px;
+    display: block;
+    height: 100%;
+    background: rgba(35,166,136,.75);" id="" class="ui-widget-content">
+                                                <label style="height: 40px;" class="w-100 p2"></label>
+                                            </div>
+                                        </div>
+                                    </div>                                     
+                                    <div class="bcon d-flex flex-row">
+                                        <div class="" style="width:165px;border-right: 1px solid #000;">Task2</div>
+                                        <div class="" style="width:100%;"> 
+                                            <div style="border: 1px solid rgb(35, 166, 136); width: 334.3px; left: 105.29048px; display: block;height: 100%;background: rgba(35,166,136,.75)" id="" class="ui-widget-content">
+                                                <label style="height: 40px;" class="w-100 p2"></label>
+                                            </div>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="visualization"></div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script type="text/javascript" src="assets/plugins/moment/min/moment-with-locales.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- slimscrollbar scrollbar JavaScript -->
+        <script src="js/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="js/waves.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <!--Menu sidebar -->
+        <script src="js/sidebarmenu.js"></script>
+        <!--stickey kit -->
+        <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+        <!--Custom JavaScript -->
+        <script src="js/custom.min.js"></script>
+        <script src="assets/plugins/jqueryui/jquery-ui.js"></script>
+        <script src="http://visjs.org/dist/vis.js"></script>
+        <script>
+        $(function() {
+            $('.input-daterange-datepicker').daterangepicker({
+    format: 'DD MM YYYY'
+  });
+  $( ".ui-widget-content" ).resizable({ containment: "parent",handles: "e,w",distance: 10}).draggable({ handle: "label",axis: "x",containment: "parent", cursor: "crosshair" }); 
+    });
+        </script>
+        <script>
+            // localStorage persistence
+var STORAGE_KEY = 'todos-vuejs-2.0'
+var todoStorage = {
+  fetch: function() {
+    var todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')
+    todos.forEach(function(todo, index) {
+      todo.id = index
+    })
+    todoStorage.uid = todos.length
+    return todos
+  },
+  save: function(todos) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
+  }
+}
+new Vue({
+            el: '#main-wrapper',
+            data: {
+					title:'',
+                    ssdate:'',
+                    datax: '' ,
+
+               gridData: todoStorage.fetch(),
+                level1:[{name:'Finance'},{name:'Sales'},{name:'Industry Analysis & Research'}],
+                level2:[{name:'Carly'},{name:'Omar'},{name:'Farah'}]
+            },
+            watch: {
+                gridData: {
+      handler: function(gridData) {
+        todoStorage.save(gridData)
+      },
+      deep: true
+    }
+  },
+              methods: {
+    addTable() {
+     if(this.title){
+        this.gridData.push({
+        item:this.title,
+        sdate: '10/10/2018 - 10/11/2018',
+         
+          header1:'',
+          header2:''
+      });
+       this.title=''  
+     }
+    },
+                  formatDate(value){
+                      if (value) {
+                              			
+   										 return  moment(String(value)).format('ll')
+  							}
+                  },
+                  updateDate:function(){
+                    gridData.sdate=this.ssdate;
+                    console.log(ssdate)
+                  },
+                  someMethod(event) {
+        // clientX/Y gives the coordinates relative to the viewport in CSS pixels.
+        console.log("clientX="+event.clientX); // x coordinate
+    
+
+        // pageX/Y gives the coordinates relative to the <html> element in CSS pixels.
+        console.log("pageX="+event.pageX); 
+       
+
+        // screenX/Y gives the coordinates relative to the screen in device pixels.
+        console.log("screenX="+event.screenX);
+      
+    }
+  }
+          })
+        </script>
+        <script>
+                  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization2');
+
+// Create a DataSet (allows two way data-binding)
+var items = new vis.DataSet();
+
+// Configuration for the Timeline
+  var pastDate = new Date( 1432135380500 ); 
+var options = {
+          start: new Date('2017-12-01'  ),
+          end: new Date(  '2018-12-01'),
+          showCurrentTime: true,
+          orientation: {axis: 'top'} ,
+          moment: function(date) {
+              return vis.moment(date).utc();
+          }
+};
+
+// Create a Timeline
+var timeline = new vis.Timeline(container, items, options);
+      timeline.addCustomTime( pastDate, "timeId" ); 
+      timeline.on('timechanged', function( properties ) {
+          console.log( properties.id, " is at ", properties.time );
+      });
+      document.getElementById('zoomIn').onclick    = function () { timeline.zoomIn( 0.2); };
+    document.getElementById('zoomOut').onclick   = function () { timeline.zoomOut( 0.2); };
+                </script>
+    </body>
+</html>

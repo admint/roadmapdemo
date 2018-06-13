@@ -1,0 +1,113 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Timeline | Basic demo</title>
+
+  <style type="text/css">
+    body, html {
+      font-family: sans-serif;
+    }
+  </style>
+  <!-- note: moment.js must be loaded before vis.js, else vis.js uses its embedded version of moment.js -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+  <script src="http://visjs.org/dist/vis.js"></script>
+  <link href="http://visjs.org/dist/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+  <button id="zoomIn">zoomIn</button>  <button id="zoomOut">zoomOut</button>
+  <div id="visualization"></div>
+  
+  <script>
+  var now = moment().minutes(0).seconds(0).milliseconds(0);
+  var itemCount = 60;
+
+  // create a data set with groups
+  var groups = new vis.DataSet();
+
+  groups.add([
+    {
+      id: 1,
+      content: "Lee",
+      nestedGroups: [11,12,13]
+    },
+    {
+      id: 2,
+      content: "invisible group",
+      visible: false
+    },
+    {
+      id: 3,
+      content: "John",
+      nestedGroups: [14],
+      showNested: false,
+      visible: false
+    },
+    {
+      id: 4,
+      content: "Alson",
+      visible: false
+    },
+
+  ]);
+
+  groups.add([
+    {
+      id: 11,
+      content: "cook",
+    },
+    {
+      id: 12,
+      content: "shop",
+    },
+    {
+      id: 13,
+      content: "clean house",
+    },
+    {
+      id: 14,
+      content: "wash dishes",
+    }
+  ]);
+
+  // create a dataset with items
+  var items = new vis.DataSet();
+  var groupIds = groups.getIds();
+    var types = [ 'box', 'point', 'range', 'background']
+  
+
+    items.add([{
+      id: 1,
+      group: 11,
+      content: 'Task ',
+      start: '2017-12-1',
+      end: '2018-12-1'},
+      {
+      id:3,
+      group: 12,
+      content: 'Task ',
+      start: '2018-1-1',
+      end: '2018-6-1'},
+
+      {
+      id: 2,
+      group: 13,
+      content: 'Task ',
+      start: '2016-4-1',
+      end: '2018-12-1'}
+      ]);
+
+  // create visualization
+  var container = document.getElementById('visualization');
+  var options = {
+    groupOrder: 'content',  // groupOrder can be a property name or a sorting function
+    orientation: {axis: 'top'} 
+  };
+
+  var timeline = new vis.Timeline(container, items, groups, options);
+    document.getElementById('zoomIn').onclick    = function () { timeline.zoomIn( 0.2); };
+    document.getElementById('zoomOut').onclick   = function () { timeline.zoomOut( 0.2); };
+  </script>
+</body>
+</html>
